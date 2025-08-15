@@ -33,6 +33,7 @@ export class RegisterUseCase {
       name,
       email,
       password_hash,
+      role: 'USER',
     })
 
     return {
