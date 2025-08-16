@@ -1,6 +1,6 @@
 import { Ong, type Prisma } from 'generated/prisma'
 import { OngRepository } from '../ongs-repository'
-import { prisma } from '@/ lib/prisma'
+import { prisma } from '@/lib/prisma'
 
 export class PrismaOngRepository implements OngRepository {
   async findById(id: string): Promise<Ong | null> {
